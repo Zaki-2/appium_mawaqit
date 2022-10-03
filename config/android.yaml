@@ -1,0 +1,24 @@
+#Capabilities Android
+#Capabilities : c’est ici que l’on définira les différentes informations dont le serveur a besoin (plateforme utilisée, version de l’OS, le nom du device …).
+
+Capabilities: &Device
+    AUTOMATION_NAME: "UiAutomator2"
+    PLATFORM_NAME: "Android"
+    PLATFORM_VERSION: "9.0"
+    DEVICE_NAME:  "Pixel API 28 AOSP"
+    ACTIVITY_NAME: "com.kanout.mawaqit.MainActivity"
+    PACKAGE_NAME: "com.kanout.mawaqit"
+    REMOTE_URL: "http://127.0.0.1:4723/wd/hub"
+    NORESET: "True"
+    APP: "mawaqit.apk"
+    
+Samsung 8:
+    <<: *Device
+    DEVICE_NAME: "emulator_1"
+    APPLICATION_NAME: "emulator_1"
+
+Samsung 12:
+    <<: *Device
+    DEVICE_NAME: "Pixel 2 API 30"
+    APPLICATION_NAME: "Pixel 2 API 30"
+    PLATFORM_VERSION: "11.0"

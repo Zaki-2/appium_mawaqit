@@ -1,0 +1,26 @@
+#Capabilities iOS
+#Capabilities : c’est ici que l’on définira les différentes informations dont le serveur a besoin (plateforme utilisée, version de l’OS, le nom du device …).
+
+Capabilities: &Device
+    AUTOMATION_NAME: "XCUITest"
+    PLATFORM_NAME: "iOS"
+    PLATFORM_VERSION: "15.0"
+    DEVICE_NAME:  "iPhone 8"
+    REMOTE_URL: "http://127.0.0.1:4723/wd/hub"
+    NORESET: "True"
+    APP: "mawaqit.apk"
+
+iPhone 11 Pro:
+    <<: *Device
+    DEVICE_NAME: "iPhone 11 Pro"
+    APPLICATION_NAME: "iPhone 11 Pro"
+
+iPhone 8:
+    <<: *Device
+    DEVICE_NAME: "iPhone 8"
+    APPLICATION_NAME: "iPhone 8"
+
+iPhone 12:
+    <<: *Device
+    DEVICE_NAME: "iPhone 12"
+    APPLICATION_NAME: "iPhone 12"

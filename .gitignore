@@ -1,0 +1,21 @@
+# Retrait des binaire python et leur dossiers
+*.pyc
+**/__pycache__/
+
+# Pas de reporting dans le repo git
+**/output/
+*.html
+*.xml
+*.png
+*.webm
+*.log
+*.jpg
+*.app
+*.apk
+
+# Pas d'extension liés à un IDE 
+**/.idea/
+*.iml
+
+# Pas de documentation figée
+# /.vscode/settings.json
